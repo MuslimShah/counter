@@ -1,0 +1,90 @@
+/* universal selector */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* body */
+
+body {
+    background-color: rgb(241, 245, 248);
+    box-sizing: border-box;
+}
+
+
+/* main-panel */
+
+.main-panel {
+    box-sizing: border-box;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding: 10%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-panel #title {
+    font-size: 5rem;
+    color: rgb(16, 42, 66);
+}
+
+
+/* child container */
+
+.child {
+    width: 100%;
+}
+
+
+/* counter text */
+
+.main-panel #count {
+    margin-top: 1rem;
+    font-size: 5rem;
+}
+
+
+/* button-group */
+
+.btn-group {
+    margin-top: 2rem;
+}
+
+
+/* buttons */
+
+.btn {
+    width: 15%;
+    height: 2rem;
+    /* padding: 0.5rem; */
+    border: 2px solid black;
+    background-color: rgb(241, 245, 248);
+    border-radius: 10px;
+    margin: 10px;
+    letter-spacing: 3px;
+}
+
+
+/* buttons on hover */
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:612px) {
+    .main-panel #title {
+        font-size: 3rem;
+        color: rgb(16, 42, 66);
+    }
+    .btn {
+        height: 2rem;
+        width: fit-content;
+        /* padding: 0.5rem; */
+        border: 2px solid black;
+        margin: 4px;
+        letter-spacing: 1px;
+    }
+}
